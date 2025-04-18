@@ -1,9 +1,28 @@
+//code from lecture slides 
 function factorial(n) {
-    if(n === 0) return 1;
-    else return n * factorial(n - 1);
+    let fact = 1; 
+    while (n > 1) {
+        fact = fact * n; 
+        n--; 
+    }
+
+    return fact; 
 }
 
 function e(n) {
-    if(n === 0) return 1;
-    else return 1.0 / factorial(n) + e(n - 1);
+    let oldEuler = 1; 
+    let euler = 1; 
+    let newEuler; 
+    let v = 2; 
+
+    while (n > 0) {
+        newEuler = euler + oldEuler; 
+        oldEuler = 1 / factorial(v); 
+        euler = newEuler; 
+
+        ++v; 
+        --n; 
+    }
+
+    return euler; 
 }
