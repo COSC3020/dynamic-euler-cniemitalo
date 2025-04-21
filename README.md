@@ -18,7 +18,7 @@ but you need to go beyond that.
 
 What is the worst-case big $\Theta$ time complexity of your algorithm?
 
-The worst-case time complexity of my algorithm would be $\Theta(n^2)$ because the euler's equation runs at most n times, each iteration calling the factorial function, which also runs at most n times. 
+The worst-case time complexity of my algorithm would be $\Theta(n)$ because the euler's equation runs at most n times. 
 
 ### Sources and Plagiarism 
 
